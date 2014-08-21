@@ -1,11 +1,11 @@
 (ns leiningen.html2md
   (:use [html-to-md-bridge.core]))
 
-(defn html2md
+(defn ^:no-project-needed html2md
   "Converts html to md"
-  [_ & [first-arg rest-args]]
-  (if (= first-arg "html2md")
-    (html-files->md rest-args)
+  [_ & files]
+  (if (not-empty files)
+    (html-files->md files)
     (println
       "Usage:\n"
       "lein html2md $files\n"

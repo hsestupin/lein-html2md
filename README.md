@@ -3,12 +3,12 @@
 A Leiningen plugin to convert html files to md. 
 
  * Doesn't require project
- * Foe each specified html file create corresponding `*.md` one at the same directory
+ * Foe each specified html file plugin creates corresponding `*.md` one in the same directory
 
 ## Usage
 
-Put `[lein-html2md "0.1.0"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install lein-html2md 0.1.0`.
+Put `[lein-html2md "0.3"]` into the `:plugins` vector of your
+`:user` profile, or if you are on Leiningen 1.x do `lein plugin install lein-html2md 0.3`.
 
 Then simply call it like this:
 
